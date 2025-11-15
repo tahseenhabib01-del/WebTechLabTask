@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Product Information Box</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: hsl(200, 43%, 99%);
+      text-align: center;
+      margin: 40px;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      background-color: #caceca;
+      padding: 30px;
+      border-radius: 15px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #f6272e8d;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #541ccd;
+      margin-top: 40px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #4CAF50;
+      display: inline-block;
+      padding-bottom: 5px;
+    }
+
+    .product-box {
+      display: inline-block;
+      background-color: #fff;
+      border: 2px solid #ddd;
+      border-radius: 10px;
+      width: 250px;
+      padding: 15px;
+      margin: 15px;
+      vertical-align: top;
+      transition: all 0.3s ease;
+      text-align: center;
+    }
+
+    .product-box:hover {
+      outline: 3px solid #4CAF50;
+      outline-offset: 5px;
+    }
+
+    .product-box img {
+      width: 100px;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
+    }
+
+    .product-box h3 {
+      color: #333;
+      margin: 10px 0 5px;
+    }
+
+    .product-box p {
+      color: #666;
+      font-size: 14px;
+      margin: 5px 0 10px;
+    }
+
+    .price {
+      color: #007BFF;
+      font-weight: bold;
+      font-size: 16px;
+      margin-bottom: 10px;
+    }
+
+    .buy-btn {
+      display: inline-block;
+      text-decoration: none;
+      background-color: #4CAF50;
+      color: white;
+      padding: 8px 15px;
+      border-radius: 5px;
+      font-weight: bold;
+      transition: background 0.3s;
+    }
+
+    .buy-btn:hover {
+      background-color: #45a049;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>Product Display Section</h1>
+
+    <!-- Laptop Category -->
+    <h2>Laptops</h2>
+    <div>
+      <div class="product-box">
+        <img src="https://hp.widen.net/content/8fvfwqxcr7/webp/8fvfwqxcr7.png?dpi=72&color=ffffff00&w=270" alt="Laptop">
+        <h3>HP ProBook 4 G1i 16 inch Notebook AI PC Wolf Pro Security Edition</h3>
+        <p>Windows 11 ProIntel® Core™ Ultra 7 255U (up to 5.2 GHz with Intel® Turbo Boost Technology, 12 MB L3 cache, 12 cores, 14 threads)32 GB memory;1 TB SSD storage16" diagonal WUXGA displayIntel® Graphics</p>
+        <div class="price">$1,099.00</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://hp.widen.net/content/76jsqxbesm/webp/76jsqxbesm.png?dpi=72&color=ffffff00&w=270" alt="Laptop">
+        <h3>HP ZBook Power 16 inch G11 Mobile Workstation PC 3 Yr Wolf Pro Security & 3 Yr Warranty</h3>
+        <p>Windows 11 ProIntel® Core™ Ultra 7 165H (up to 5.0 GHz with Intel® Turbo Boost Technology, 24 MB L3 cache, 16 cores, 22 threads)64 GB memory; 1 TB SSD storage16" diagonal WQXGA displayNVIDIA RTX™ 2000 Ada Generation Laptop GPU (8 GB GDDR6 dedicated)</p>
+        <div class="price">$2,799.20</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://hp.widen.net/content/ibh6hebz5t/webp/ibh6hebz5t.png?dpi=72&color=ffffff00&w=270" alt="Laptop">
+        <h3>HP OmniBook 7 Laptop Next Gen AI PC 17t-dc000, 17.3" Touch Screen</h3>
+        <p>Windows 11 HomeIntel® Core™ Ultra 7 256V (up to 4.8 GHz, 12 MB L3 cache, 8 cores, 8 threads) + Intel® Arc™ 140V GPU (8GB) + 16 GB(onboard)512 GB PCIe® NVMe™ M.2 SSD17.3" diagonal, FHD (1920 x 1080), multitouch-enabled, IPS, edge-to-edge glass, micro-edge, 400 nits</p>
+        <div class="price">$679.99</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Headphones Category -->
+    <h2>Headphones</h2>
+    <div>
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/headphone/t-wolf/h150/h150-01-228x228.webp" alt="Headphones">
+        <h3>T-WOLF H150 Wired Gaming Headphone</h3>
+        <p>Plug Type: 3.5 mmStrong Impression with Excellent Sound Quality,90-Degree Rotation Ability & Sophisticated Design</p>
+        <div class="price">499TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/headphone/sennheiser/sennheiser-hd280-pro-228x228.jpg" alt="Headphones">
+        <h3>AKG K52 Professional Closed Back Studio Monitor Headphone</h3>
+        <p>Driver size (mm): 40,Rated impedance (Ω): 32,Maximum input power (mW): 200,Cable(s) length (m): 2.5</p>
+        <div class="price">6500TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/headphone/akg/k240-studio/k240-studio-01-228x228.jpg" alt="Headphones">
+        <h3>AKG K240 STUDIO Professional Headphone</h3>
+        <p>Patented Varimotion Diaphragms DeliverDriver size: 30mm, XXL Transducers,3.5mm - 3 Me,ter Cable,Mini XLR Connector</p>
+        <div class="price">13500TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+
+    <!-- Smartwatch Category -->
+    <h2>Smartwatches</h2>
+    <div>
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/smart-watch/colmi/p81/p81-black-official-228x228.webp" alt="Smartwatch">
+        <h3>COLMI P81 Smart Watch</h3>
+        <p>1.9 inch HD Display,100+ Sports Modes,300mAh battery Capacity,Waterproof level: IP68</p>
+        <div class="price">1450TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/smart-watch/colmi/p71/p71-black-official-228x228.webp" alt="Smartwatch">
+        <h3>COLMI P71 Smart Watch</h3>
+        <p>1.9 inch IPS HD Display,SpO2 tracking & Heart rate monitoring,104 Sport Modes,IP68 Waterproof</p>
+        <div class="price">1480TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+
+      <div class="product-box">
+        <img src="https://www.startech.com.bd/image/cache/catalog/smart-watch/oraimo/watch-5-max/watch-5-max-chrome-228x228.webp" alt="Smartwatch">
+        <h3>Oraimo Watch 5 Max</h3>
+        <p>Display: 2.01" TFT Screen,Battery Capacity: 300mAh,Connectivity: Bluetooth V5.3,SWater Rating: IP68</p>
+        <div class="price">1590TK</div>
+        <a href="#" class="buy-btn">Buy Now</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
