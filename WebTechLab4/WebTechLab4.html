@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Validation</title>
+    <h2>
+        Validation
+    <style>
+        body {
+            font-family: serif;
+        }
+        .header, .footer {
+            border: 1px solid black;
+            padding: 10px;
+        }
+        .nav {
+            float: right;
+        }
+        .logo {
+            width: 130px;
+        }
+        .box {
+            border: 1px solid black;
+            width: 450px;
+            margin: auto;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        .line {
+            border-top: 1px solid black;
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        input[type=text], input[type=password] {
+            width: 240px;
+        }
+        
+    </style>
+</head>
+
+<body>
+    
+
+<div class="header">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9uXxiAh10APtPFrwUjiSdhhZnFrM9A-49tA&s" class="logo" alt="XCompany">
+
+        <a href="validation.html"> Validationtion</a>
+    </div>
+</div>
+
+<div class="box">
+    <h3>Validation</h3>
+    <body>
+    <h2>
+        Hi, we are from web tech section U
+    </h2>
+    <input type="text" placeholder="Enter your name" id="name" />
+    <p id="nameErr" style="color:red"></p>
+    <input type="text" placeholder="Enter your Email" id="email" />
+    <p id="emailErr" style="color:red"></p>
+    <input type="password" placeholder="Enter your password" id="password" />
+    <p id="passwordErr" style="color:red"></p>
+    <button onclick="handleSubmit()">Submit</button>
+</body>
+
+    <table><script>
+        function handleSubmit() {
+            const NameValue = document.getElementById("name").value;
+            const emailValue = document.getElementById("email").value;
+            const passwordValue = document.getElementById("password").value;
+            if (!NameValue || NameValue == "") {
+                const ErrorElement = document.getElementById("nameErr");
+                ErrorElement.innerHTML = "Name is required";
+            } else {
+                const ErrorElement = document.getElementById("nameErr");
+                ErrorElement.innerHTML = "";
+            }
+            if (!emailValue || emailValue == "") {
+                const ErrorElement = document.getElementById("emailErr");
+                ErrorElement.innerHTML = "Email is required";
+            } else {
+                const ErrorElement = document.getElementById("emailErr");
+                ErrorElement.innerHTML = "";
+            }
+            if (!passwordValue || passwordValue == "") {
+                const ErrorElement = document.getElementById("passwordErr");
+                ErrorElement.innerHTML = "Password is required";
+            } else {
+                const ErrorElement = document.getElementById("passwordErr");
+                ErrorElement.innerHTML = "";
+            }
+        }
+    </script>
+    </table>
+
+  
+   
+</div>
+
+<br><br>
+
+<div class="footer" align="center">
+    Copyright © 2017
+</div>
+
+</body>
+<body>
+
+    </body>
+</html>
